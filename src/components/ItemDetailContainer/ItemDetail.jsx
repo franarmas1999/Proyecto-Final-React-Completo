@@ -9,16 +9,6 @@ function ItemDetail({ product }) {
   const { addToCart } = useContext(cartContext);
 
   function onAddToCart(count) {
-    /* Swal.fire({
-      title: `Agregadas ${count} unidades al Carrito`,
-      text: "¿Deseas ir al carrito?",
-      icon: "success",
-      confirmButtonText: "Ir al carrito",
-    }).then((result) => {      
-      if (result.isConfirmed) {
-        navigate("/cart");
-      }
-    }); */
 
     const itemForCart = {
       ...product,
@@ -32,12 +22,11 @@ function ItemDetail({ product }) {
   return (
     <div className="card-detail">
       <div className="card-detail_img">
-        <img src={product.thumbnail} alt="Product img" />
+        <img src={product.img} alt="Product img"/>
       </div>
       <div className="card-detail_detail">
         <h2>{product.title}</h2>
-        <p>{product.description}</p>
-        <h4 className="priceTag">$ {product.price}</h4>
+        <h4 className="priceTag">{product.price}</h4>
       </div>
       {!isInCart ? (
         <ItemCount
@@ -50,8 +39,6 @@ function ItemDetail({ product }) {
           <Link to="/cart">
             <button>Ir al Carrito</button>
           </Link>
-          <button>Volver al catálogo</button>
-          <button>Quitar del carrito</button>
         </div>
       )}
     </div>

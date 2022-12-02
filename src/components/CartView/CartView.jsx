@@ -12,16 +12,16 @@ function CartView() {
 
   return (
     <div>
-      <h1>Este es el contenido de tu carrito</h1>
+      <h1>ORDEN DE COMPRA</h1>
       {cart.map((cartItem) => (
         <div key={cartItem.id}>
-          <img src={cartItem.thumbnail} alt={cartItem.title} />
+          <img src={cartItem.img} alt={cartItem.title} />
           <h3>{cartItem.title}</h3>
-          <h4>$ {cartItem.price}</h4>
+          <h4>{cartItem.price}</h4>
           <h4>Cantidad: {cartItem.count}</h4>
           <h4>Precio a pagar: {cartItem.count * cartItem.price}</h4>
           <Button onClick={() => removeItem(cartItem.id)} type="danger">
-            X
+            Eliminar 
           </Button>
         </div>
       ))}

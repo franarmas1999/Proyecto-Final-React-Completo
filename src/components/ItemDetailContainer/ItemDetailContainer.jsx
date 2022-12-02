@@ -22,8 +22,7 @@ function ItemDetailContainer() {
       .finally(() => setIsLoading(false));
   }, [id]);
 
-  // early return - retorn anticipado
-  if (isLoading) return <Loader color="blue" />;
+  if (isLoading) return <Loader color="black" />;
 
   return <ItemDetail product={product} />;
 }

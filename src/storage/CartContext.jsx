@@ -1,9 +1,9 @@
+//CONTEXTO
+
 import { useState, createContext } from "react";
-//1- Inicializamos el context con CreateContext
 
 const cartContext = createContext();
 
-// 2. Definimos nuestro Provider
 export function CartContextProvider(props) {
   const [cart, setCart] = useState([]);
 
@@ -26,12 +26,6 @@ export function CartContextProvider(props) {
       newCart.push(itemData);
       setCart(newCart);
     }
-    /* else {
-      setCart((newCart) => {
-        newCart.push(itemData);
-        return newCart;
-      });
-    } */
   }
 
   function totalItemsInCart() {
@@ -48,13 +42,9 @@ export function CartContextProvider(props) {
 
   function removeItem(itemId) {
     console.log("Removiendo el item", itemId);
-    /*  cart.filter */
 
   }
 
-  function clear() {
-    /*  */
-  }
 
   const value = {
     cart,
@@ -64,10 +54,8 @@ export function CartContextProvider(props) {
     totalPriceInCart
   };
 
-  //3.Creamos el "value" para los componentes que consuman el context
 
   return (
-    //4. retornamos el Context Provider con el value creado
     <cartContext.Provider value={value}>{props.children}</cartContext.Provider>
   );
 }

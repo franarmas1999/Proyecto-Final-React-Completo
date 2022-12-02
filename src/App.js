@@ -10,7 +10,7 @@ import CartView from "./components/CartView/CartView";
 function App() {
   return (
     <div className="App">
-      {/* 5. Importamos y renderizamos el Provider */}
+      {}
       <CartContextProvider>
         <BrowserRouter>
           <NavBar />

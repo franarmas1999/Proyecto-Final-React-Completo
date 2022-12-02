@@ -8,12 +8,11 @@ function NavBar() {
   return (
     <nav className="nav-menu">
       <Link to="/">
-        <h3>Mi tienda</h3>
+        <h3>TAKONES SHOES</h3>
       </Link>
 
-      <Link to="/category/smartphones">Smartphones</Link>
-      <Link to="/category/laptops">Laptops</Link>
-      <Link to="/category/fragrances">Fragancias</Link>
+      <Link to="/category/hombre">HOMBRE</Link>
+      <Link to="/category/mujer">MUJER</Link>
       <CartWidget />
     </nav>
   );

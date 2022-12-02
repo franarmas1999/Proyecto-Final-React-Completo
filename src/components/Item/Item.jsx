@@ -21,23 +21,20 @@ function Item({ product }) {
   return (
     <div className="card">
       <button onClick={handleFavorite} className={classButtonFavorite}>
-        ♥
+        +
       </button>
       <div className="card-img">
-        <img src={product.thumbnail} alt="Product img" />
+        <img src={product.img} alt="Product img" />
       </div>
       <div className="card-detail">
         <h2>{product.title}</h2>
-        <p>{product.description}</p>
-        {/* Rendering condicional con operador lógico AND && */}
-        {product.discount && (
-          <h4 className="offer">Descuento: {product.discount}%</h4>
-        )}        
-        <h4 style={ stylePrice } className="priceTag">$ {product.price}</h4>
+        <p>{product.model}</p>
+        <h4 style={ stylePrice } className="priceTag">{product.price}</h4>
       </div>
       <Link to={urlDetail}>
-        <Button>Ver más!</Button>
+        <Button>VER PRODUCTO</Button>
       </Link>
+      <p>Cantidad: {product.stock}</p>
     </div>
   );
 }

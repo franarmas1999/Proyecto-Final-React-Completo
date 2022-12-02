@@ -4,7 +4,7 @@ const stockTakones = [
       id: 1,
       title: "CATERPILLER",
       model: "ROCKET",
-      img: "../../public/img/borBerlina.jpg",
+      img: "./img/borBerlina.jpg",
       stock: "20",
       price: "$40.000" 
   },
@@ -12,31 +12,31 @@ const stockTakones = [
       id: 2,
       title: "TIMBERLAND",
       model: "FEDEX",
-      img: "../../public/img/borBerlina.jpg",
+      img: "./img/borcegoBlanco.jpg",
       stock: "14",
-      price: "$40.000" 
+      price: "$30.000" 
   },
   {
       id: 3,
       title: "HUSH PUPPIE",
       model: "SALMOS",
-      img: "../../public/img/borBerlina.jpg",
+      img: "./img/borChelseaHombre.jpg",
       stock: "30",
-      price: "$40.000" 
+      price: "$33.000" 
   },
   {
       id: 4,
       title: "CATERPILLER",
       model: "POXITT",
-      img: "../../public/img/borBerlina.jpg",
+      img: "./img/borColoradoHombre.jpg",
       stock: "11",
-      price: "40.000" 
+      price: "52.000" 
   },
   {
       id: 5,
       title: "TIMBERLAND",
       model: "LETTIE",
-      img: "",
+      img: "./img/borDina.jpg",
       stock: "7",
       price:"$40.000"  
   },
@@ -44,58 +44,35 @@ const stockTakones = [
       id: 6,
       title: "HUSH PUPPIE",
       model: "ZYAN",
-      img: "",
+      img: "./img/borFounderHombre.jpg",
       stock: "2",
-      price: "$40.000" 
+      price: "$36.000" 
   },
   {
       id: 7,
       title: "CATERPILLER",
       model: "ROXANNE",
-      img: "",
+      img: "./img/borKeltonHombre.jpg",
       stock: "8",
-      price: "40.000" 
+      price: "45.000" 
   },
   {
       id: 8,
       title: "TIMBERLAND",
       model: "KILLER",
-      img: "",
+      img: "./img/borMolly.jpg",
       stock: "13",
-      price: "$40.000" 
+      price: "$30.000" 
   },
   {
       id: 9,
       title: "HUSH PUPPIE",
       model: "GREYNN",
-      img: "",
+      img: "./img/borSegreHombre.jpg",
       stock: "15",
       price: "40.000" 
   },
-  {
-      id: 10,
-      title: "CATERPILLER",
-      model: "ORIGINS",
-      img: "",
-      stock: "9",
-      price: "40.000" 
-  },
-  {
-      id: 11,
-      title: "TIMBERLAND",
-      model: "MTILLAK",
-      img: "",
-      stock: "3",
-      price: "40.000" 
-  },
-  {
-      id: 12,
-      title: "HUSH PUPPIE",
-      model: "IOSA",
-      img: "",
-      stock: "6",
-      price: "$40.000" 
-  },
+  
 ]
 
 export default function getItemsFromAPI() {

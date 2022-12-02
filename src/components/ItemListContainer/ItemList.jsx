@@ -9,7 +9,7 @@ function ItemList(props) {
   return (
     <FlexWrapper>
       {emptyArray ? (
-        <Loader color="green" size={128} />
+        <Loader color="black" size={100} />
       ) : (
         props.productsList.map((product) => (
           <Item key={product.id} product={product} />

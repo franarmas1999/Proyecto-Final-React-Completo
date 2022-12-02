@@ -54,19 +54,6 @@
 
 .card-favicon.favorite{
   display: block;
-  background-color: rgb(223, 117, 84);
+  background-color: rgb(228, 9, 9);
   color: white;
-}
-
-small{
-  color: #8c8c8e;
-}
-
-.priceTag{
-  color: #444444;
-  font-weight: bold;
-}
-
-.offerTag{
-  color: #21b276
 }

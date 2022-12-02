@@ -8,8 +8,6 @@ function ItemListContainer() {
   const [productsList, setProductsList] = useState([]);
   const { categoryid } = useParams();
 
-  /* undefined -> false /
-  /* "string"  -> true */
 
   useEffect(() => {
     if (categoryid) {
